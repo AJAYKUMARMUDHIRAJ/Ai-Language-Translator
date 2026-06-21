@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Translator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Language Translation Tool</h1>
+
+    <textarea id="inputText"
+    placeholder="Enter text here"></textarea>
+
+    <br><br>
+
+    <select id="sourceLang">
+        <option value="en">English</option>
+        <option value="te">Telugu</option>
+        <option value="hi">Hindi</option>
+    </select>
+
+    <select id="targetLang">
+        <option value="te">Telugu</option>
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="translateText()">
+        Translate
+    </button>
+
+    <br><br>
+
+    <textarea id="outputText" readonly></textarea>
+
+    <br><br>
+
+    <button onclick="copyText()">Copy</button>
+    <button onclick="speakText()">🔊 Speak</button>
+    <script src="script.js"></script>
+
+</body>
+</html>
